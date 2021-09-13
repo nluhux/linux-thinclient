@@ -4,35 +4,118 @@
 
 基于Linux的小型设备发行，用于构建远程桌面瘦客户端
 
-* 准备做的
+* 源码树
 
-** 设备支持
+  github.com/nluhux/buildroot
 
-*** TODO QEMU x86_64 (用于测试)
-*** TODO Raspberrypi 3B
-*** TODO Raspberrypi 0W
-*** TODO OrangePi Lite
-*** TODO Generic x86_64
-*** TODO Generic i386
-*** TODO 还有更多但是没有设备用来测试
+* 设备支持
 
-** 功能
+** DONE QEMU x86_64 (用于测试)
+** TODO Raspberrypi 3B
+** TODO Raspberrypi 0W
+** TODO OrangePi Lite
+** TODO Generic x86_64 (需要更多测试)
+** TODO Generic i386   (需要更多测试)
 
-*** TODO 图形管理界面
-**** TODO QT界面的管理程序
-***** TODO 使用快捷键随时调出
-**** TODO 同时连接多个服务器
-      
-*** TODO 网页管理界面
-**** TODO 使用C作为CGI
-     
-*** TODO 批量控制
-**** TODO 使用ssh协议
+* 协议
 
-*** TODO 图像加速
-**** TODO RDP REMOTE RFX
-*** TODO 声音支持
-**** TODO RDP
-*** TODO USB重定向支持
-**** TODO USB/IP
-*** TODO 摄像头/音频串流支持
+** RDP
+
+   已经做好
+
+** VNC
+
+   准备做
+
+** Serial/Telnet/SSH
+
+   准备做
+
+* 功能
+
+** 安全
+
+   使用Linux用户隔离，确保运行界面的用户只会拿到需要的权限。
+
+** WAYLAND
+
+   多方面考虑之后选择了Wayland
+   使用Weston作为WM
+   已经调试完毕
+   暂时没发现大问题
+   
+** 图形加速
+
+   正在做
+   
+** RDP 客户端
+
+   集成了Freerdp
+   USB转发功能:  WIP (需要更多测试)
+   音频转发功能: WIP (需要更多测试)
+
+** 触摸屏支持
+
+   没有硬件用来测试，延后
+
+** 中文输入法支持
+
+   优先级不高，延后
+   
+** QT界面的管理程序
+
+   正在做
+   
+** 同时连接多个服务器
+
+   正在做
+   
+** 网页管理界面
+
+   优先级不高，准备做
+   
+** 使用C作为网页的CGI
+
+   优先级不高，准备做
+   
+** 基于SSH协议的批量控制
+
+   正在做
+
+** 声音支持
+
+   WIP
+   需要更多测试
+   
+** USB重定向支持
+
+   WIP
+   需要更多测试
+   
+** USB/IP
+
+   准备做
+   
+** 摄像头/音频串流支持
+
+   准备做
+   
+** 优化性能，减少占用
+
+   正在做
+
+** VPN支持
+
+   准备做
+
+** OTA升级
+
+   准备做
+
+** Squashfs/j2ffs 运行的文件系统
+   
+   准备做
+   
+** 文档
+
+   准备做
