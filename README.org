@@ -10,31 +10,37 @@
 
 * 设备支持
 
-** DONE QEMU x86_64 (用于测试)
-** TODO Raspberrypi 3B
-** TODO Raspberrypi 0W
-** TODO OrangePi Lite
-** TODO Generic x86_64 (需要更多测试)
-** TODO Generic i386   (需要更多测试)
+** QEMU x86_64 (用于测试)
+   done
+** Raspberrypi 3B
+   wip
+** Raspberrypi 0W
+   
+** OrangePi Lite
+   
+** Generic x86_64 (需要更多测试)
+   
+** Generic i386   (需要更多测试)
 
 * 协议
 
 ** RDP
 
-   已经做好
+   DONE
 
 ** VNC
 
-   准备做
+   WIP
 
 ** Serial/Telnet/SSH
 
-   准备做
+   WIP
 
 * 功能
 
 ** 安全
 
+   DONE
    使用Linux用户隔离，确保运行界面的用户只会拿到需要的权限。
 
 ** WAYLAND
@@ -43,16 +49,18 @@
    使用Weston作为WM
    已经调试完毕
    暂时没发现大问题
+   DONE
    
 ** 图形加速
 
-   正在做
+   WIP
    
 ** RDP 客户端
 
    集成了Freerdp
    USB转发功能:  WIP (需要更多测试)
    音频转发功能: WIP (需要更多测试)
+   DONE
 
 ** 触摸屏支持
 
@@ -64,11 +72,11 @@
    
 ** QT界面的管理程序
 
-   正在做
+   WIP
    
 ** 同时连接多个服务器
 
-   正在做
+   WIP
    
 ** 网页管理界面
 
@@ -80,7 +88,7 @@
    
 ** 基于SSH协议的批量控制
 
-   正在做
+   WIP
 
 ** 声音支持
 
@@ -94,28 +102,26 @@
    
 ** USB/IP
 
-   准备做
+   WIP
    
 ** 摄像头/音频串流支持
 
-   准备做
+   WIP
    
 ** 优化性能，减少占用
 
-   正在做
+   WIP
 
 ** VPN支持
 
-   准备做
+   WIP
 
 ** OTA升级
 
-   准备做
 
 ** Squashfs/j2ffs 运行的文件系统
    
-   准备做
    
 ** 文档
 
-   准备做
+   WIP
